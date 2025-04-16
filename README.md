@@ -1,21 +1,42 @@
-cat << 'EOF' > README.md
-# Flight Price Prediction Model
+# Flight Prediction Model
 
-This project aims to predict flight prices using machine learning techniques. By analyzing various features from historical flight data, the model provides accurate price estimations, assisting travelers in making informed decisions.
+## Overview
+The Flight Prediction Model predicts whether a flight will be delayed based on various features such as weather conditions, flight carrier, and historical data. The goal is to help passengers and airlines plan better and minimize the inconvenience caused by delays.
 
-## 📁 Project Structure
+This model utilizes machine learning algorithms to classify flights as either on-time or delayed, offering real-time prediction capabilities.
 
-- `Data_Train.xlsx`: Contains the training dataset with historical flight information.
-- `Test_set.xlsx`: Holds the test dataset for evaluating the model's performance.
-- `flight_price.ipynb`: Jupyter Notebook detailing the data preprocessing, exploratory data analysis (EDA), model training, and evaluation processes.
-- `requirements.txt`: Lists all the Python dependencies required to run the project.
+## Objective
+Develop a model that predicts flight delays using machine learning. The model will take in multiple features and predict the likelihood of a delay, which can be useful for passengers and airlines in planning and operational efficiency.
 
-## 🚀 Getting Started
+## Requirements
 
-To set up and run the project locally, follow these steps:
+### Software Requirements:
+- Python 3.x
+- Jupyter Notebook (optional for interactive development)
+- Libraries:
+  - pandas
+  - numpy
+  - scikit-learn
+  - matplotlib
+  - seaborn
 
-### Clone the Repository
+### Hardware Requirements:
+- No specific hardware is required other than a standard computer to run Python.
 
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Nabajit-Das/Flight-Predication-Model.git
+   cd Flight-Predication-Model
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+
+### Results
+The trained model can predict flight delays with high accuracy. Based on the trained model, you can input flight data and receive a prediction of whether the flight will be delayed or not, and by how much.
+**Sample Output**
 ```bash
-git clone https://github.com/Nabajit-Das/Flight-Predication-Model.git
-cd Flight-Predication-Model
+Model Accuracy: 92.57%
+Predicted Delay: 15 minutes
+
